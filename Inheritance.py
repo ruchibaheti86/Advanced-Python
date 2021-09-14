@@ -53,3 +53,20 @@ c=Child("Arthur")
 c.fathername="John"
 c.mothername="Alisa"
 print(c.childname,c.fathername,c.mothername)
+
+class GrandFather:
+    def show(self):
+        print("Hello")
+class Father(GrandFather):
+    def print_data(self):
+        print("hi")
+class Child(Father):
+    def display(self):
+        print("welcome")
+
+f=Father()
+f.show()
+c=Child()
+c.print_data()
+c.display()
+
